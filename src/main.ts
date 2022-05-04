@@ -1,3 +1,6 @@
+import moment from "moment"
+console.log(moment().format("YYYY-MM-DD HH:mm:ss"))
+
 import * as util from "./util"
 util.hello("TypeScript")
 

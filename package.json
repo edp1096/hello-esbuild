@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "prestart": "tsc-watch",
+    "run": "tsc",
     "build": "node esbuild.build.js",
     "watch": "node esbuild.watch.js"
   },
   "devDependencies": {
     "esbuild": "^0.14.38"
   },
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.29.3"
+  }
 }
