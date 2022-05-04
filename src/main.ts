@@ -8,9 +8,9 @@ import { hello } from "./util"
 hello("TypeScript")
 
 interface PersonInfo {
-    name: string|null,
-    age: number|null,
-    gender: string|null
+    name: string,
+    age?: number,
+    gender?: string
 }
 
 class Family {
@@ -28,7 +28,7 @@ class Family {
 const myfamily = new Family()
 
 const me: PersonInfo = { name: "John", age: 30, gender: "male" }
-const father: PersonInfo = { name: "Joe", age: 60, gender: "male" }
+const father: PersonInfo = { name: "Joe", age: 60 }
 const mother: PersonInfo = { name: "Jane", age: 55, gender: "female" }
 const sister: PersonInfo = { name: "Jessica", age: 28, gender: "female" }
 
