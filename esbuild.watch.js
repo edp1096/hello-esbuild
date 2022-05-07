@@ -6,7 +6,8 @@ build({
     outdir: "dist",
     minify: true,
     sourcemap: true,
-    target: "es2021",
+    target: "es2020",
+    format: "esm",
     define: { "process.env.NODE_ENV": "developemnt" },
     watch: true
 })
