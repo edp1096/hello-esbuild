@@ -2,6 +2,7 @@
 
 require('esbuild').serve({
     servedir: './',
+    host: "localhost",
     port: 8000,
 }, {
     entryPoints: ["src/main.ts"],
