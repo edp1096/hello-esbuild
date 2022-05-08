@@ -1,6 +1,6 @@
-import { build } from 'esbuild'
+// import { build } from 'esbuild'
 
-build({
+require('esbuild').build({
     entryPoints: ["src/main.ts"],
     bundle: true,
     outdir: "dist",

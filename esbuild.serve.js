@@ -1,6 +1,9 @@
-import { build } from 'esbuild'
+// import { build } from 'esbuild'
 
-build({
+require('esbuild').serve({
+    servedir: './',
+    port: 8000,
+}, {
     entryPoints: ["src/main.ts"],
     bundle: true,
     outdir: "dist",
@@ -9,7 +12,7 @@ build({
     target: "es2020",
     format: "esm",
     define: { "process.env.NODE_ENV": "developemnt" },
-    watch: true
+    // watch: true
 })
-    .then(() => console.log("Running esbuild.."))
+    .then(() => { console.log("Running server on http://localhost:8000") })
     .catch(() => process.exit(1))
